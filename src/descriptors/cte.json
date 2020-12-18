@@ -1,0 +1,32 @@
+{
+  "name": "CTE",
+  "prefix": "cte",
+  "uri": "http://cte",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "CTEServiceTask",
+      "extends": [
+        "bpmn:ServiceTask"
+      ],
+      "properties": [
+        {
+          "name": "rut",
+          "isAttr": true,
+          "type": "String"
+        },{
+          "name": "password",
+          "isAttr": true,
+          "type": "String"
+        },{
+          "name": "enlaceXml",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}

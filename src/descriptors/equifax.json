@@ -1,0 +1,32 @@
+{
+  "name": "DICOM",
+  "prefix": "dicom",
+  "uri": "http://dicom",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "DicomServiceTask",
+      "extends": [
+        "bpmn:ServiceTask"
+      ],
+      "properties": [
+        {
+          "name": "rut",
+          "isAttr": true,
+          "type": "String"
+        },{
+          "name": "customerCode",
+          "isAttr": true,
+          "type": "String"
+        },{
+          "name": "enlaceXml",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+  ]
+}

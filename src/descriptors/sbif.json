@@ -1,0 +1,32 @@
+{
+  "name": "SBIF",
+  "prefix": "cte",
+  "uri": "http://sbif",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "SbifServiceTask",
+      "extends": [
+        "bpmn:ServiceTask"
+      ],
+      "properties": [
+        {
+          "name": "rut",
+          "isAttr": true,
+          "type": "String"
+        },{
+          "name": "customerCode",
+          "isAttr": true,
+          "type": "String"
+        },{
+          "name": "enlaceXml",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+  ]
+}

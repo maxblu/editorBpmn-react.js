@@ -1,0 +1,43 @@
+{
+  "name": "CTE",
+  "uri": "http://datamart.cl/schema/bpmn/cte",
+  "prefix": "cte",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "AnalyzedNode",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "suitable",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "AnalysisDetails",
+      "superClass": [
+        "Element"
+      ],
+      "properties": [
+        {
+          "name": "inputVariable",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "outputVariable",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "emumerations": [],
+  "associations": []
+}
